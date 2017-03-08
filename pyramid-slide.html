@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <h1>Pyramid Slide</h1>
+	<div id="container">
+	<br><br>
+	<div class="center">
+	<p>Brick Symbol:<select id="combobox" oninput="drawPyramid()">
+                            <option value="X">X</option>
+                            <option value="@">@</option>
+                            <option value="$">$</option>
+                            <option value="#" selected>#</option></select>
+     How high?
+	<input type="range" id="slide" value="10" min="0" max="20" oninput="drawPyramid()" onchange="pyramidHeight.value = slide.value" >
+  <output id="pyramidHeight">8</output></p>
+  <br><br>
+
+  <div id="pyramid"></div>
+	</div>
+	</div>
+  <script src="pyramid-slide.js"></script>
+
+
+</body>
+</html>
